@@ -1,2 +1,0 @@
-# stemcbook
-Book for STEMCstudio
