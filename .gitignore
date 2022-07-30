@@ -1,0 +1,12 @@
+output
+.DS_Store
+
+# build artifacts
+Gemfile.lock
+stemcbook.html
+stemcbook.pdf
+stemcbook.pdfmarks
+stemcbook.epub
+stemcbook-kf8.epub
+stemcbook.mobi
+contributors.txt
