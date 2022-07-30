@@ -6,7 +6,9 @@ namespace :book do
     version_string = '0'
   end
   date_string = Time.now.strftime('%Y-%m-%d')
-  params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}'"
+  # The time in milliseconds since the January 1, 1970 epoch is useful for cache busting of include URIs.
+  date_time_string = Time.now.strftime('%s')
+  params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute revdatetime='#{date_time_string}' --attribute allow-uri-read"
   header_hash = `git rev-parse --short HEAD`.strip
 
   # Check contributors list
