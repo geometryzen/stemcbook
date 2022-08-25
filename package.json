@@ -1,0 +1,20 @@
+{
+  "name": "stemcbook",
+  "version": "1.0.0",
+  "description": "= The STEMCstudio Book, First Edition",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec rake",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geometryzen/stemcbook.git"
+  },
+  "author": "David Geo Holmes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geometryzen/stemcbook/issues"
+  },
+  "homepage": "https://github.com/geometryzen/stemcbook#readme"
+}
