@@ -55,7 +55,7 @@ namespace :book do
   file 'book/contributors.txt' do
       puts 'Generating contributors list'
       sh "echo 'Contributors as of #{header_hash}:\n' > book/contributors.txt"
-      sh "git shortlog -s | grep -v -E '(Straub|Chacon|dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
+      sh "git shortlog -s | grep -v -E '(Holmes|dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
   end
 
   desc 'build HTML format'
