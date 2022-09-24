@@ -1,12 +1,22 @@
-<svg width="1380" height="1119" xmlns="http://www.w3.org/2000/svg">
-    <g>
-        <rect fill="#999" height="256" width="512" y="0" x="0" />
-        <rect fill="#ff9900" height="256" width="512" y="256" x="0" />
-        <rect fill="#fff" height="256" width="128" y="128" x="256" />
-        <rect fill="#555" height="256" width="128" y="128" x="128" />
-        <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="30" y="256" x="138" stroke-width="0" stroke="#999" fill="#999">STEM</text>
-        <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="30" y="256" x="225" stroke-width="0" stroke="#fff" fill="#fff">C</text>
-        <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" y="256" x="260" stroke-width="0" stroke="#ff9900" fill="#ff9900">studio</text>
-        <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" y="256" x="326" stroke-width="0" stroke="#555" fill="#555">.com</text>
-    </g>
+<svg width="1119" height="1380" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <rect stroke="null" id="svg_2" x="490.00412" y="356.00176" width="552.99996" height="270.99996" fill="#999"/>
+   <rect stroke="null" id="svg_3" x="490.00412" y="627.00172" width="552.99996" height="270.99996" fill="#ff9900"/>
+   <rect stroke="null" id="svg_4" x="766.5041" y="491.50174" width="138.24999" height="270.99996" fill="#fff"/>
+   <rect stroke="null" id="svg_5" x="628.25411" y="491.50174" width="138.24999" height="270.99996" fill="#555"/>
+   <text stroke="#999" transform="matrix(1.08008 0 0 1.05859 -83.8118 -22.1935)" id="svg_6" fill="#999" stroke-width="0" x="669.27268" y="613.26199" font-size="30" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">STEM</text>
+   <text stroke="#fff" transform="matrix(1.08008 0 0 1.05859 -83.8118 -22.1935)" id="svg_7" fill="#fff" stroke-width="0" x="756.27268" y="613.26199" font-size="30" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">C</text>
+   <text stroke="#ff9900" transform="matrix(1.08008 0 0 1.05859 -83.8118 -22.1935)" id="svg_8" fill="#ff9900" stroke-width="0" x="791.27268" y="613.26199" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">studio</text>
+   <text stroke="#555" transform="matrix(1.08008 0 0 1.05859 -83.8118 -22.1935)" id="svg_9" fill="#555" stroke-width="0" x="857.27268" y="613.26199" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">.com</text>
+  </g>
+  <text xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_10" y="80" x="879.5" stroke-width="0" stroke="#000" fill="#000000">DRAFT EDITION</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="60" id="svg_11" y="650.00001" x="80" stroke-width="0" stroke="#000" fill="#000000">STEMCBook</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_12" y="959.99961" x="300" stroke-width="0" stroke="#000" fill="#000000">How to Author Learning Experiences using STEMCstudio</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_14" y="80" x="47.49414" stroke-width="0" stroke="#000" fill="#000000">Expressing Ideas through Computational Modelling™</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_15" y="1160" x="80" stroke-width="0" stroke="#000" fill="#000000">David Geo Holmes</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_16" y="1160" x="800" stroke-width="0" stroke="#000" fill="#000000">GeometryZen Press</text>
+ </g>
 </svg>
