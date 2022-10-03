@@ -82,16 +82,4 @@ GitHub assumes that forks will be used to contribute to the repo from which they
 
 ## Setting up a publication chain for e-books
 
-This is a technical task, please ping @jnavila to get started with epub publication.
-
-## Beyond Pro Git
-
-Translating the book is the first step. Once this is finished, you could consider translating the user interface of Git itself.
-
-This task requires a more technical knowledge of the tool than the book. Hopefully, after having translated the full book content, you can understand the terms used in the application. If you feel technically up to the task, the repo is [here](https://github.com/git-l10n/git-po) and you just have to follow the [guide](https://github.com/git-l10n/git-po/blob/master/po/README).
-
-Beware though that
-
- * you'll need to use more specific tools to manage localization po files (such as editing them with [poedit](https://poedit.net/) and merging them. You might need to compile git in order to check your work.
- * a basic knowledge of how translating applications works is required, which is significantly different from translating books.
- * the core Git project uses more stringent [procedures](https://github.com/git-l10n/git-po/blob/master/Documentation/SubmittingPatches) to accept contributions, be sure to abide by them.
+This is a technical task, please ping @david to get started with epub publication.

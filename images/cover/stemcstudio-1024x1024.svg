@@ -1,0 +1,16 @@
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <rect id="svg_2" x="0" y="0" width="1024" height="512" fill="#999"/>
+   <rect id="svg_3" x="0" y="512" width="1024" height="512" fill="#ff9900"/>
+   <rect id="svg_4" x="512" y="256" width="256" height="512" fill="#fff"/>
+   <rect id="svg_5" x="256" y="256" width="256" height="512" fill="#555"/>
+   <text id="svg_6" fill="#999" stroke="#999" stroke-width="0" x="276" y="512" font-size="60" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">STEM</text>
+   <text id="svg_7" fill="#fff" stroke="#fff" stroke-width="0" x="450" y="512" font-size="60" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">C</text>
+   <text id="svg_8" fill="#ff9900" stroke="#ff9900" stroke-width="0" x="520" y="512" font-size="48" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">studio</text>
+   <text id="svg_9" fill="#555" stroke="#555" stroke-width="0" x="652" y="512" font-size="48" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">.com</text>
+  </g>
+ </g>
+
+</svg>

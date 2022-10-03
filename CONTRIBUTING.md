@@ -27,18 +27,6 @@ A large rewrite tends to be very subjective, often only clarifying things for a 
 Professional copy editors have already reviewed this content multiple times.
 It's unlikely that your prose is going to be *so* much better that it's worth changing large portions of text.
 
-## Figures
-
-The images in this book are generated using [Sketch 3](https://www.sketchapp.com/), with the [included sketchbook file](diagram-source/book.sketch).
-
-To create a figure:
-
-1. Add a page to the sketchbook.
-Use the included symbols wherever possible.
-2. Add a "slice" to your page.
-Name the slice so that it matches the destination PNG filename, relative from the root of the source directory.
-3. Set your slice to export at "800w".
-
 ## Translations
 
 If you want to contribute to translating Pro Git into your language, take a look at [TRANSLATING.md](TRANSLATING.md).
