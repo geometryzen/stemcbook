@@ -1,7 +1,7 @@
 {
     "name": "stemcbook",
-    "version": "1.0.0",
-    "description": "The STEMCstudio Book, First Edition",
+    "version": "2.167.22",
+    "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
         "build": "bundle exec rake book:build",

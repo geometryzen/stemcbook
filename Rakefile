@@ -1,14 +1,14 @@
 namespace :book do
 
   # Variables referenced for build
-  version_string = `git describe --tags`.chomp
-  if version_string.empty?
-    version_string = '0'
+  git_tags_string = `git describe --tags`.chomp
+  if git_tags_string.empty?
+    git_tags_string = '0'
   end
   date_string = Time.now.strftime('%Y-%m-%d')
   # The time in milliseconds since the January 1, 1970 epoch is useful for cache busting of include URIs.
   date_time_string = Time.now.strftime('%s')
-  params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute revdatetime='#{date_time_string}' --attribute allow-uri-read"
+  params = "--attribute gittags='#{git_tags_string}' --attribute revdate='#{date_string}' --attribute revdatetime='#{date_time_string}' --attribute allow-uri-read"
   header_hash = `git rev-parse --short HEAD`.strip
 
   # Check contributors list
