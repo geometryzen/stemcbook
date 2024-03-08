@@ -1,6 +1,6 @@
 {
     "name": "stemcbook",
-    "version": "2.168.2",
+    "version": "2.168.3",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
