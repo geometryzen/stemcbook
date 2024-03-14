@@ -1,6 +1,6 @@
 {
     "name": "stemcbook",
-    "version": "testing",
+    "version": "mouse",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
