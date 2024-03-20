@@ -1,6 +1,6 @@
 {
     "name": "stemcbook",
-    "version": "EventBus",
+    "version": "2.169.3",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
