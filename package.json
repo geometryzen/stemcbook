@@ -1,6 +1,6 @@
 {
     "name": "stemcbook",
-    "version": "Formatting",
+    "version": "using",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
