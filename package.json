@@ -4,7 +4,7 @@
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
-        "build": "bundle exec rake book:build",
+        "build": "bundle install && bundle exec rake book:build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
