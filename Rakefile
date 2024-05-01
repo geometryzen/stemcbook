@@ -100,7 +100,7 @@ namespace :book do
   task :check => [:build_html, :build_epub] do
       puts 'Checking generated books'
 
-      sh "htmlproofer --check-html stemcbook.html"
+      sh "htmlproofer stemcbook.html"
       sh "epubcheck stemcbook.epub"
   end
 
