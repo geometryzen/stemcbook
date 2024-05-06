@@ -8,7 +8,7 @@ namespace :book do
   date_string = Time.now.strftime('%Y-%m-%d')
   # The time in milliseconds since the January 1, 1970 epoch is useful for cache busting of include URIs.
   date_time_string = Time.now.strftime('%s')
-  params = "--attribute gittags='#{git_tags_string}' --attribute revdate='#{date_string}' --attribute revdatetime='#{date_time_string}' --attribute allow-uri-read"
+  params = "-r ./themes/vscodedark.rb -a rouge-style=vscodedark -a gittags='#{git_tags_string}' -a revdate='#{date_string}' -a revdatetime='#{date_time_string}' -a allow-uri-read"
   header_hash = `git rev-parse --short HEAD`.strip
 
   # Check contributors list
@@ -55,7 +55,7 @@ namespace :book do
   file 'book/contributors.txt' do
       puts 'Generating contributors list'
       sh "echo 'Contributors as of #{header_hash}:\n' > book/contributors.txt"
-      sh "git shortlog -s | grep -v -E '(dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
+      sh "git shortlog -s | grep -v -E '(Holmes|dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
   end
 
   desc 'build HTML format'
@@ -63,8 +63,7 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to HTML...'
-      sh "bundle exec asciidoctor #{params} -a data-uri -r ./themes/tulip.rb -a rouge-style=tulip stemcbook.asc -o stemcbook.html"
-      # sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.asc -o stemcbook.html"
+      sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.asc -o stemcbook.html"
       puts ' -- HTML output at stemcbook.html'
 
   end
@@ -94,8 +93,7 @@ namespace :book do
 
       puts 'Converting to PDF... (this one takes a while)'
       # output is reirected to stderr. https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
-      sh "bundle exec asciidoctor-pdf #{params} -r ./themes/tulip.rb -a rouge-style=tulip stemcbook.asc -o stemcbook.pdf 2>/dev/null"
-      # sh "bundle exec asciidoctor-pdf #{params} stemcbook.asc -o stemcbook.pdf 2>/dev/null"
+      sh "bundle exec asciidoctor-pdf #{params} stemcbook.asc -o stemcbook.pdf 2>/dev/null"
       puts ' -- PDF output at stemcbook.pdf'
   end
 
