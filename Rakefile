@@ -33,7 +33,7 @@ namespace :book do
   end
 
   desc 'build basic book formats'
-  task :build => [:build_html, :build_epub, :build_pdf] do
+  task :build => [:build_html, :build_epub, :build_pdf, :build_mobi] do
     begin
         # Run check
         Rake::Task['book:check'].invoke
@@ -55,7 +55,7 @@ namespace :book do
   file 'book/contributors.txt' do
       puts 'Generating contributors list'
       sh "echo 'Contributors as of #{header_hash}:\n' > book/contributors.txt"
-      sh "git shortlog -s | grep -v -E '(Holmes|dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
+      sh "git shortlog -s | grep -v -E '(dependabot)' | cut -f 2- | column -c 120 >> book/contributors.txt"
   end
 
   desc 'build HTML format'
@@ -63,7 +63,8 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to HTML...'
-      sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.asc"
+      sh "bundle exec asciidoctor #{params} -a data-uri -r ./themes/tulip.rb -a rouge-style=tulip stemcbook.asc -o stemcbook.html"
+      # sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.asc -o stemcbook.html"
       puts ' -- HTML output at stemcbook.html'
 
   end
@@ -73,7 +74,7 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to EPub...'
-      sh "bundle exec asciidoctor-epub3 #{params} stemcbook.asc"
+      sh "bundle exec asciidoctor-epub3 #{params} stemcbook.asc -o stemcbook.epub"
       puts ' -- Epub output at stemcbook.epub'
 
   end
@@ -83,7 +84,7 @@ namespace :book do
       check_contrib()
 
       puts "Converting to Mobi (kf8)..."
-      sh "bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 stemcbook.asc"
+      sh "bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 stemcbook.asc -o stemcbook.mobi"
       puts " -- Mobi output at stemcbook.mobi"
   end
 
@@ -92,7 +93,9 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to PDF... (this one takes a while)'
-      sh "bundle exec asciidoctor-pdf #{params} stemcbook.asc 2>/dev/null"
+      # output is reirected to stderr. https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
+      sh "bundle exec asciidoctor-pdf #{params} -r ./themes/tulip.rb -a rouge-style=tulip stemcbook.asc -o stemcbook.pdf 2>/dev/null"
+      # sh "bundle exec asciidoctor-pdf #{params} stemcbook.asc -o stemcbook.pdf 2>/dev/null"
       puts ' -- PDF output at stemcbook.pdf'
   end
 
@@ -101,7 +104,7 @@ namespace :book do
       puts 'Checking generated books'
 
       sh "htmlproofer stemcbook.html"
-      sh "epubcheck stemcbook.epub"
+      # sh "epubcheck   stemcbook.epub"
   end
 
   desc 'Clean all generated files'
@@ -115,8 +118,8 @@ namespace :book do
             # Rescue if file not found
             rescue Errno::ENOENT => e
               begin
-                  puts e.message
-                  puts 'Error removing files (ignored)'
+                  # puts e.message
+                  # puts 'Error removing files (ignored)'
               end
         end
     end

@@ -1,10 +1,13 @@
 {
     "name": "stemcbook",
-    "version": "on",
+    "private": "true",
+    "version": "2.173.2",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
-        "build": "bundle install && bundle exec rake book:build",
+        "build": "bundle install && npm run clean && bundle exec rake book:build",
+        "check": "bundle exec rake book:check",
+        "clean": "bundle exec rake book:clean",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
