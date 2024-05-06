@@ -25,7 +25,7 @@ module Rouge
   
         style Comment, :fg => :gray, :italic => true
         style Comment::Preproc, :fg => '#cccccc', :bold => true
-        style Error, Generic::Error, :fg => :white, :bg => :red
+        style Error, Generic::Error, :fg => :white
         style Generic::Deleted, :fg => :red
         style Generic::Inserted, :fg => :green
         style Generic::Emph, :italic => true
