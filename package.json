@@ -1,7 +1,7 @@
 {
     "name": "stemcbook",
     "private": "true",
-    "version": "2.175.8",
+    "version": "of",
     "description": "The STEMCstudio Book",
     "main": "index.js",
     "scripts": {
