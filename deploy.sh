@@ -21,8 +21,8 @@ else
 fi
 
 npm pkg set version="$VERSION"
-# Update the version string on line 3 of stemcbook.asc
-sed -i '3s/.*/v'$VERSION', {docdate}: Draft/' stemcbook.asc
+# Update the version string on line 3 of stemcbook.adoc
+sed -i '3s/.*/v'$VERSION', {docdate}: Draft/' stemcbook.adoc
 
 npm install
 npm update

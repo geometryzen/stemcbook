@@ -63,7 +63,7 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to HTML...'
-      sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.asc -o stemcbook.html"
+      sh "bundle exec asciidoctor #{params} -a data-uri stemcbook.adoc -o stemcbook.html"
       puts ' -- HTML output at stemcbook.html'
 
   end
@@ -73,7 +73,7 @@ namespace :book do
       check_contrib()
 
       puts 'Converting to EPub...'
-      sh "bundle exec asciidoctor-epub3 #{params} stemcbook.asc -o stemcbook.epub"
+      sh "bundle exec asciidoctor-epub3 #{params} stemcbook.adoc -o stemcbook.epub"
       puts ' -- Epub output at stemcbook.epub'
 
   end
@@ -83,7 +83,7 @@ namespace :book do
       check_contrib()
 
       puts "Converting to Mobi (kf8)..."
-      sh "bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 stemcbook.asc -o stemcbook.mobi"
+      sh "bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 stemcbook.adoc -o stemcbook.mobi"
       puts " -- Mobi output at stemcbook.mobi"
   end
 
@@ -93,7 +93,7 @@ namespace :book do
 
       puts 'Converting to PDF... (this one takes a while)'
       # output is reirected to stderr. https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
-      sh "bundle exec asciidoctor-pdf #{params} stemcbook.asc -o stemcbook.pdf 2>/dev/null"
+      sh "bundle exec asciidoctor-pdf #{params} stemcbook.adoc -o stemcbook.pdf 2>/dev/null"
       puts ' -- PDF output at stemcbook.pdf'
   end
 

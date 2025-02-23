@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "1b545ca220f553e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6871fe9fb246c0ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08741b2eb474c9fa",
+            "type": "leaf",
+            "state": {
+              "type": "asciidoc-editor-view",
+              "state": {
+                "file": "stemcbook.adoc"
+              },
+              "icon": "lucide-file",
+              "title": "stemcbook"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bf196648656b0add",
+    "type": "split",
+    "children": [
+      {
+        "id": "831a35d8e9ea73ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e157ce13633a637",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "14b397655d92834e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "47e70c9fc438ca35",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b000b7a5d181969c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fe3236de5bd3444",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c94d201f2b99810b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "book/03-learning-tools-interop/images/LTI_register_01_log_in_as_the_moodle_administrator.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for LTI_register_01_log_in_as_the_moodle_administrator"
+            }
+          },
+          {
+            "id": "650f884418e252b3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "book/03-learning-tools-interop/images/LTI_register_01_log_in_as_the_moodle_administrator.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from LTI_register_01_log_in_as_the_moodle_administrator"
+            }
+          },
+          {
+            "id": "98810e729a01e2a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f7daa9f4d0e702b2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "book/03-learning-tools-interop/images/LTI_register_01_log_in_as_the_moodle_administrator.png"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of LTI_register_01_log_in_as_the_moodle_administrator"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "asciidoctor-editor:New asciidoc file": false
+    }
+  },
+  "active": "08741b2eb474c9fa",
+  "lastOpenFiles": [
+    "stemcbook.pdf",
+    "stemcbook.epub",
+    "stemcbook.html",
+    "book/contributors.txt",
+    "stemcbook.adoc",
+    "stemcbook.mobi",
+    "appendix-xyz.adoc",
+    "book/cover.png",
+    "book/cover.svg",
+    "TRANSLATING.md",
+    "book/03-learning-tools-interop/images/LTI_register_01_log_in_as_the_moodle_administrator.png",
+    "book/02-stemcstudio-basics/images/package-upgrade-selection-in-project-settings.png"
+  ]
+}
